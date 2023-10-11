@@ -33,6 +33,10 @@ p {
     font-family: 'Indie Flower', cursive;
 }
 
+img {
+    width: 80%;
+}
+
 footer {
     margin-top: 5%;
     color: #eee;
