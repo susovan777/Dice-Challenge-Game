@@ -35,7 +35,16 @@ let randomNum2 = Math.floor(Math.random() * 6) + 1;
 console.log('Dice 1 number: ' + randomNum2);
 
 let randomImg2 = `images/dice${randomNum2}.png`;
-t
+
 let randomDice2 = document.querySelector('.img2');
 
 randomDice2.setAttribute('src', randomImg2)
+
+// Making the winner
+if (randomNum1 > randomNum2) {
+  document.querySelector('.winner').innerHTML = "<h2> 🥇 Player 1 is the winner";
+} else if (randomNum1 < randomNum2) {
+  document.querySelector('.winner').innerHTML = "<h2> 🥇 Player 2 is the winner";
+} else {
+  document.querySelector('.winner').innerHTML = "<h2> 💠 Draw 💠";
+}
